@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Burger Shop</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background: rgb(45, 45, 45);
+            color: rgb(255, 255, 255);
+        }
+        nav{
+            width: 100%;
+            padding: 1rem 5%;
+            background: rgb(38, 38, 38);
+            border-bottom: 1px solid rgb(0, 0, 0);
+            backdrop-filter: blur(15px);
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3rem;
+        }
+        .logo{
+            font-size: 1.7rem;
+            font-weight: 750;
+            color: #3b90ff;
+            letter-spacing: 1px;
+        }
+        .nav-links{ 
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        .box{
+            height: auto;
+            width: 350px;
+            padding: 15px;
+            font-size: 0.8rem;
+            font-weight: 450;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            border-width: 60px;
+            border-radius: 20px;
+            background-color: rgb(38, 38, 38);
+
+        }
+        .flex-container{
+            gap: 25px;
+            padding: auto;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .button{
+            background-color: #5f6aff;
+            border: 0 solid #3b90ff;
+            border-radius: 1.5rem;
+            box-sizing: border-box;
+            color: #ffffff;
+            cursor: pointer;
+            display: inline-block;
+            font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            font-size: 1.1rem;
+            font-weight: 600;
+            line-height: 1;
+            padding: 1rem 1.6rem;
+            text-align: center;
+            text-decoration: none #0d172a solid;
+            text-decoration-thickness: auto;
+            transition: all .1s cubic-bezier(.4, 0, .2, 1);
+            box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .button:hover {
+            background-color: #6aa3ff;
+            color: #fff;
+        }
+
+        @media (min-width: 768px) {
+            .button {
+                font-size: 14px;
+                padding: 0.8rem 1rem;
+        }
+        }
+        .checkout{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            padding: 30px;
+            flex-wrap: wrap; 
+            font-size: 2rem;
+        }
+    </style>
+    </head>
+    <body>
+        <nav>
+            <ul class="nav-links">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Hamburger-menu_-_Delapouite_-_white_-_game-icons.svg/1024px-Hamburger-menu_-_Delapouite_-_white_-_game-icons.svg.png?20240118023138" height="25" width="25">
+                <div class="logo">BURGER SHOP</div>
+                <a href="cart.html">
+                <img src="https://uxwing.com/wp-content/themes/uxwing/download/e-commerce-currency-shopping/shopping-cart-white-icon.png" height="25" width="25">
+                </a>
+            </ul>
+        </nav>
+        <div class=flex-container>
+            <h2>BURGERS</h2>
+            <div class="box box1">
+                <b>Classic Burger 10.00€</b>
+                <p>Classic hamburger with beef, greens and sauce.</p>
+                <p>(1532 KCAL, L, G)</p>
+                <img src="https://media.istockphoto.com/id/1473452859/photo/tasty-cheeseburger-glass-of-cola-and-french-fries-on-wooden-tray-close-up.jpg?s=612x612&w=0&k=20&c=QLq7mv50xRL-LSfLYgUwNHsHm8Ri5nWrIdNwQL0qCqc=" height="150px" width="200px">
+                <button class="button" role="button">Add to cart</button>
+                <b>Cheeseburger 12.99€</b>
+                <p>Hamburger with cheese.</p>
+                <p>(1284 KCAL, L, G)</p>
+                <img src="https://media.istockphoto.com/id/1319396810/photo/delicious-grilled-burger-isolated-on-white-background-fast-food-hamburger-perfect-classic.jpg?s=612x612&w=0&k=20&c=oGQuQAGp0glpFjBUEU7MS5O30LaJ3Bied70w1G0i-v8=" size height="150px" width="210px">
+                <button class="button" role="button">Add to cart</button>
+                <b>Bacon Burger</b>
+                <p>Hamburger with extra bacon.</p>
+                <p>(1742 KCAL, L, G)</p>
+                <img src="https://media.istockphoto.com/id/520215281/photo/bacon-burger.jpg?s=612x612&w=0&k=20&c=oeN1zlDU0_CiXXbSaH9ugzdUqaUmaUXUJXmLn-pw4jM=" height="150px" width="200px">
+                <button class="button" role="button">Add to cart</button>
+                <b>Veggie Burger 12.99€</b>
+                <p>Contains vegan ingredients.</p>
+                <p>(967 KCAL, L, G, V)</p>
+                <img src="https://media.istockphoto.com/id/905921648/photo/healthy-baked-sweet-potato-burger-with-whole-grain-bun-guacamole-vegan-mayonnaise-and.jpg?s=612x612&w=0&k=20&c=7mrEKIn1cQbN0Q6k3ONHPsaN3jmsYz_X7YExQIOqG9A=" height="150px" width="200px">
+                <button class="button" role="button">Add to cart</button>
+            </div>
+            <h2>SIDES</h2>
+            <div class="box box2">
+                <b>French Fries 6.50€</b>
+                <p>Potato french fries with salt and ketchup.</p>
+                <p>(745 KCAL, L, G)</p>
+                <img src="https://media.istockphoto.com/id/1443993866/photo/french-fries-with-ketchup-and-cocktail-sauce.jpg?s=612x612&w=0&k=20&c=URpOsc5tds8tOfxK4ZO3Tkx6mwLho7fL_pTBSNdziBU=" height="150px" width="200px">
+                <button class="button" role="button">Add to cart</button>
+                <b>Onion Rings 6.50€</b>
+                <p>Onion rings with sauce of your own choosing.</p>
+                <p>(562 KCAL, L)</p>
+                <img src="https://media.istockphoto.com/id/865789218/photo/onion-rings-with-ketchup.jpg?s=612x612&w=0&k=20&c=XxCAWLfOicCFWfZz0tRv1qoDMZM7UdQlfLaMJT6GoS8=" height="150px" width="200px">
+                <button class="button" role="button">Add to cart</button>
+                <b>Salad 8.00€</b>
+                <p>Salad with lettuce, tomato, cucumber and dressing.</p>
+                <p>(394 KCAL, L, G, V)</p>
+                <img src="https://media.istockphoto.com/id/1454741285/photo/roast-fish-and-vegetable-salad-on-wooden-background.jpg?s=612x612&w=0&k=20&c=Slmk-RLvdR3317E5W2UKLul4y1ZH3axjL2XCNOBZbhE=" height="150px" width="200px">
+                <button class="button" role="button">Add to cart</button>
+            </div>
+            <h2>DRINKS</h2>
+            <div class="box box3">
+                <b>Soda 3.50€</b>
+                <p>300ml soda of your own choosing.</p>
+                <p>(50 KCAL, L, G, V)</p>
+                <img src="https://media.istockphoto.com/id/1062831310/photo/pour-soft-drink-in-glass-with-ice-splash-on-dark-background.jpg?s=612x612&w=0&k=20&c=XlLTcFQ0FqcTWRa9QniHgpjlkdFrOJGJFGm5jg_TAAw=" height="150px" width="200px">
+                <button class="button" role="button">Add to cart</button>
+                <b>Milkshake 5.00€</b>
+                <p>Milkshake of your own choosing.</p>
+                <p>(582 KCAL, G)</p>
+                <img src="https://media.istockphoto.com/id/926990564/photo/chocolate-milk-and-whipped-cream.jpg?s=612x612&w=0&k=20&c=LabS3iGKio9kYS7OUGsosTm0Bb4XKY8WkXPer_RU3IQ=" height="150px" width="200px">
+                <button class="button" role="button">Add to cart</button>
+                <b>Iced Tea 3.50€</b>
+                <p>Peach ice tea.</p>
+                <p>(0 KCAL, L, G, V)</p>
+                <img src="https://media.istockphoto.com/id/1204404992/photo/lemon-ice-tea.jpg?s=612x612&w=0&k=20&c=h-kF_PzJCl4fyvZEcjZ1kqn74rsQwxeALl1pkWzvPp4=" height="150px" width="200px">
+                <button class="button" role="button">Add to cart</button>
+            </div>
+            <h2>DESSERTS</h2>
+            <div class="box box4">
+                <b>Ice Cream 5€</b>
+                <p>Small cup of ice cream of your own choosing.</p>
+                <p>(286 KCAL, G)</p>
+                <img src="https://media.istockphoto.com/id/1491655936/photo/chocolate-ice-cream-scoop.jpg?s=612x612&w=0&k=20&c=m_NDyHXn048dbKDuAfcnRwP54AM74xQMCWsUlOL-JJI=" height="150px" width="200px">
+                <button class="button" role="button">Add to cart</button>
+                <b>Brownie 8€</b>
+                <p>Slice of brownie.</p>
+                <p>(234 KCAL, L)</p>
+                <img src="https://media.istockphoto.com/id/168731372/photo/fresh-homemade-chocolate-brownie.jpg?s=612x612&w=0&k=20&c=DOWddwc5EBO7gedFIL7SC5absmtACBOefRRc8YLyh-w=" height="150px" width="200px">
+                <button class="button" role="button">Add to cart</button>
+            </div>
+            </div>
+            <div class="checkout">
+                <a href="cart.html">
+                <button class="button" role="button">Proceed to checkout</button>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
